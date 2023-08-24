@@ -1,0 +1,13 @@
+.header{
+    min-height: 1rem;
+    background: linear-gradient(to right bottom, rgba(253, 214, 205, 0.986), rgb(193, 135, 171));;
+    &-logo{
+        img{
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+    &-nav-link{
+        
+    }
+}
