@@ -1,0 +1,54 @@
+block mixins 
+    include ../blocks/mixins.pug
+block vars 
+    -title = 'Sign Up'
+    -bodyClass = ''
+
+doctype html
+html(lang="en")
+  head
+    title=title 
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Poppins:wght@300;400;500;700&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap' rel='stylesheet')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css")
+    link(rel="stylesheet", href="../../css/style.css")
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css')
+    script(src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js')
+  body(class = bodyClass)
+    .wrappper
+        block header
+          include ../blocks/header
+        block container 
+           .modal-register
+            .modal-content-register.modal-content
+              h3 Sign Up
+              form.form(action='#' method='method')
+                .form-group
+                  label(for='FirstName') First Name
+                  input.form-control(type='text', name='FirstName' placeholder='FirstName' required)
+                .form-group
+                  label(for='LastName') Last Name
+                  input.form-control(type='text', name='LastName' placeholder='LastName' required)
+                .form-group
+                  label(for='email') Email
+                  input.form-control(type='email', name='email' placeholder='Email' required)
+                .form-group
+                  label(for='password') Password
+                  input.form-control(type='password', name='password' placeholder='Password' required)
+                .form-group
+                  label(for='password') Confirm Password
+                  input.form-control(type='password', name='password' placeholder='Password' required)
+                .other
+                  a.other-create(href='/') Create account
+                  .forgot 
+                    i.other-forgot.fa-solid.fa-lock
+                    a.other-forgot(href='/') Forgot password?
+                button.button(type='submit' value='submit') Sign In
+        block foot
+          include ../blocks/footer
+    block layer 
+    include ../blocks/scripts.pug 
+    script(src="./scripts/slider.js")    
+  
+

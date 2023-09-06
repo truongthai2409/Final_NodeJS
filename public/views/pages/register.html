@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&amp;family=Poppins:wght@300;400;500;700&amp;family=Roboto:ital,wght@0,300;0,500;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="wrappper">
+      <header class="header">
+        <nav class="header-nav"> 
+          <div class="container header-nav-container"><a class="header-logo" href="/"><img src="./images/Logo.png" alt="Logo"><span class="header-logo-item">Logo</span></a>
+            <ul class="header-menu">
+              <li><a class="header-menu-item" href="/">About</a></li>
+              <li><a class="header-menu-item" href="/">Home</a></li>
+            </ul>
+            <div class="header-button"><a class="header-button-login" href="/login">Login </a><a class="header-button-register" href="/register">Register</a></div>
+          </div>
+        </nav>
+      </header>
+      <div class="modal-register">
+        <div class="modal-content-register modal-content">
+          <h3>Sign Up</h3>
+          <form class="form" action="#" method="method">
+            <div class="form-group">
+              <label for="FirstName">First Name</label>
+              <input class="form-control" type="text" name="FirstName" placeholder="FirstName" required>
+            </div>
+            <div class="form-group">
+              <label for="LastName">Last Name</label>
+              <input class="form-control" type="text" name="LastName" placeholder="LastName" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input class="form-control" type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input class="form-control" type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Confirm Password</label>
+              <input class="form-control" type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="other"><a class="other-create" href="/">Create account</a>
+              <div class="forgot"> <i class="other-forgot fa-solid fa-lock"></i><a class="other-forgot" href="/">Forgot password?</a></div>
+            </div>
+            <button class="button" type="submit" value="submit">Sign In</button>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="box"> 
+          <div class="box-column"> 
+            <h4>Help </h4><a href="/">Help Center </a><a href="/">FAQs</a><a href="/">Privacy Policy</a><a href="/">Term</a><a href="/">Manager</a>
+          </div>
+          <div class="box-column"> 
+            <h4>Company </h4><a href="/">About us</a><a href="/">Careers</a><a href="/">Press</a><a href="/">Blog</a><a href="/">PointsMAX</a>
+          </div>
+          <div class="box-column"> 
+            <h4>Destination </h4><a href="/">Countries</a><a href="/">Cities</a>
+          </div>
+          <div class="box-column"> 
+            <h4>Partner with us</h4><a href="/">Partner Hub</a><a href="/">Affilate</a><a href="/">Connectactivity</a><a href="/">Advertise </a>
+          </div>
+          <div class="box-column"> 
+            <h4>Get app</h4><a href="/">iOS app </a><a href="/">Android app</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./scripts/slider.js">   </script>
+  </body>
+</html>

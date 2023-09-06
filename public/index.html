@@ -36,6 +36,30 @@ li {
   list-style: none;
 }
 
+.footer {
+  width: 100%;
+  height: 20rem;
+  background-color: rgb(233, 235, 238);
+  margin-top: 0;
+}
+
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.box-column {
+  flex-direction: column;
+}
+.box-column a {
+  display: block;
+  margin-top: 5px;
+}
+.box-column a:hover {
+  text-decoration: underline;
+}
+
 .header {
   min-height: 7rem;
   background-image: linear-gradient(to right bottom, rgba(253, 214, 205, 0.986), rgb(193, 135, 171));
@@ -123,17 +147,6 @@ li {
   object-fit: cover;
 }
 
-.wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -141,17 +154,22 @@ html {
 .modal {
   background-color: rgb(249, 249, 249);
   width: 100%;
-  height: 100vh;
+  height: 105vh;
+  margin-bottom: -20px;
+}
+.modal-register {
+  height: 125vh;
+  background-color: rgb(249, 249, 249);
+  width: 100%;
 }
 .modal-content {
   margin-top: 7rem;
   min-width: 450px;
-  height: 450px;
   background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 16px 24px 24px;
+  padding: 16px 24px 50px;
   transform: translate(-50%, -50%);
   box-shadow: 1px 1px 8px 8px rgb(221, 221, 221);
   line-height: 1;
@@ -161,6 +179,10 @@ html {
 }
 .modal-content p {
   font-weight: bold;
+}
+.modal-content-register {
+  margin-top: 15rem;
+  padding-bottom: 5rem;
 }
 
 .form-group {
@@ -227,7 +249,7 @@ html {
               <li><a class="header-menu-item" href="/">About</a></li>
               <li><a class="header-menu-item" href="/">Home</a></li>
             </ul>
-            <div class="header-button"><a class="header-button-login" href="public/views/pages/login.html">Login </a><a class="header-button-register" href="./views/pages/register.html">Register</a></div>
+            <div class="header-button"><a class="header-button-login" href="/login">Login </a><a class="header-button-register" href="/register">Register</a></div>
           </div>
         </nav>
       </header>
@@ -243,6 +265,25 @@ html {
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
+      <footer class="footer">
+        <div class="box"> 
+          <div class="box-column"> 
+            <h4>Help </h4><a href="/">Help Center </a><a href="/">FAQs</a><a href="/">Privacy Policy</a><a href="/">Term</a><a href="/">Manager</a>
+          </div>
+          <div class="box-column"> 
+            <h4>Company </h4><a href="/">About us</a><a href="/">Careers</a><a href="/">Press</a><a href="/">Blog</a><a href="/">PointsMAX</a>
+          </div>
+          <div class="box-column"> 
+            <h4>Destination </h4><a href="/">Countries</a><a href="/">Cities</a>
+          </div>
+          <div class="box-column"> 
+            <h4>Partner with us</h4><a href="/">Partner Hub</a><a href="/">Affilate</a><a href="/">Connectactivity</a><a href="/">Advertise </a>
+          </div>
+          <div class="box-column"> 
+            <h4>Get app</h4><a href="/">iOS app </a><a href="/">Android app</a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./scripts/slider.js"> </script>
   </body>

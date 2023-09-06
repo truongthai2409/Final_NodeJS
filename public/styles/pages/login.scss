@@ -3,18 +3,23 @@
 .modal{
     background-color: rgb(249, 249, 249);
     width: 100%;
-    height: 100vh;
-    // position: fixed;
-    // z-index: 1;
+    height: 105vh;
+    margin-bottom: -20px;
+    // padding-bottom: 15rem;
+    &-register{
+        height: 125vh;
+        background-color: rgb(249, 249, 249);
+        width: 100%;
+    }
     &-content{
         margin-top: 7rem;
         min-width: 450px;
-        height: 450px;
+        // min-height: 450px auto;
         background-color: white;
         position: absolute;
         top: 50%;
         left: 50%;
-        padding: 16px 24px 24px;
+        padding: 16px 24px 50px;
         transform: translate(-50%, -50%); 
         box-shadow: 1px 1px 8px 8px rgb(221, 221, 221);
         line-height: 1;
@@ -24,7 +29,13 @@
         p{
             font-weight: bold;
         }
+        &-register{
+            margin-top: 15rem;
+           
+            padding-bottom: 5rem;
+        }
     }
+    
 }
 .form{
     &-group {

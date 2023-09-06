@@ -1,4 +1,5 @@
 const express = require('express')
+const router = require('./routers')
 const app = express()
 const port = 3000
 const path = require('path')
@@ -8,17 +9,13 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.set('views', path.join(__dirname, '../public'))
+
 app.set('view engine', 'pug')
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
+// console.log(path.join(__dirname, '../public/views/pages/register'))
 
-app.get('/', (req, res) => {
-  res.render('../public/index', { title: 'Store1', bodyClass : 'homePage' })
-})
-
-
+router(app);
 
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`)
